@@ -1,0 +1,62 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://example.com/object1717341317.json",
+    "title": "Root",
+    "type": "object",
+    "required": ["status", "data", "message"],
+    "properties": {
+        "status": {
+            "type": "string",
+            "title": "Status",
+            "default": "",
+            "examples": ["success"],
+            "pattern": "^.*$"
+        },
+        "data": {
+            "type": "object",
+            "title": "Data",
+            "required": ["id", "employee_name", "employee_salary", "employee_age", "profile_image"],
+            "properties": {
+                "id": {
+                    "type": "integer",
+                    "title": "Id",
+                    "examples": [1],
+                    "default": 0
+                },
+                "employee_name": {
+                    "type": "string",
+                    "title": "Employee_name",
+                    "default": "",
+                    "examples": ["Tiger Nixon"],
+                    "pattern": "^.*$"
+                },
+                "employee_salary": {
+                    "type": "integer",
+                    "title": "Employee_salary",
+                    "examples": [320800],
+                    "default": 0
+                },
+                "employee_age": {
+                    "type": "integer",
+                    "title": "Employee_age",
+                    "examples": [61],
+                    "default": 0
+                },
+                "profile_image": {
+                    "type": "string",
+                    "title": "Profile_image",
+                    "default": "",
+                    "examples": [""],
+                    "pattern": "^.*$"
+                }
+            }
+        },
+        "message": {
+            "type": "string",
+            "title": "Message",
+            "default": "",
+            "examples": ["Successfully! Record has been fetched."],
+            "pattern": "^.*$"
+        }
+    }
+}

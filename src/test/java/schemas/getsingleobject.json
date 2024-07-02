@@ -1,0 +1,10 @@
+{
+    "id": "#String",
+    "name": "#String",
+    "data": {
+        "year": #Integer,
+        "price": #Integer,
+        "CPU model": "#String",
+        "Hard disk size": "#String"
+    }
+}
